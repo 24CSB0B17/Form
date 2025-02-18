@@ -3,7 +3,7 @@
 
 
 function resetform(){
-    alert("surely u ewant to resubmit");
+    alert("Are you sure you want to resubmit?");
     document.getElementById("fillform").reset();
     document.getElementById("error1").textContent="";
 
