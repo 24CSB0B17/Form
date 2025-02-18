@@ -3,7 +3,7 @@
 
 
 function resetform(){
-    alert("Are you sure you want to resubmit?");
+    alert("Are you sure you want to reset? All entered data will be erased.");
     document.getElementById("fillform").reset();
     document.getElementById("error1").textContent="";
 
@@ -39,14 +39,14 @@ function validateage(){
     const nu=document.getElementById("age").value;
     const errormsg=document.getElementById("ea");
     if(nu.trim()===""){
-      errormsg.textContent="please enter your correct age";
+      errormsg.textContent="Please enter your correct age";
       return;
     }
     if (nu < 18) {
-        errormsg.textContent = "age must be above 18";
+        errormsg.textContent = "Age must be above 18";
     }
     else if (nu > 120) {
-        errormsg.textContent = " age must be below  120";
+        errormsg.textContent = " Age must be below  120";
     }
 }
 function valiemail(){
@@ -55,78 +55,78 @@ function valiemail(){
 
 
     if(!/^[A-Za-z]+$/.test(em)){
-        error.textContent="please check email and retype correctly";
+        error.textContent="Please check email address and retype correctly";
     }
     else if(em.length <1){
-        error.textContent="enter valid one";
+        error.textContent="Enter valid one";
     }
     else if(em.length()>20){
-        error.textContent="s**t !! ur email is too lengthy";
+        error.textContent="Your email address is too lengthy";
     }
 }
 function valimob(){
     const num=document.getElementById("mobile").value;
     const error=document.getElementById("em");
     if(!/^[A-Za-z]+$/.test(num)){
-        error.textContent="your mobile number consiss of alpha bets please recheck";
+        error.textContent="Your mobile number contains alphabets. Please enter valid mobile number";
     }
 }
 function valp1(){
     const num=document.getElementById("pincode1").value;
     const error=document.getElementById("ep1");
     if(num>999999){
-        error.textContent="please recheck your pincode of temporary address its too large";
+        error.textContent="Please check your pincode of temporary address, it is too large";
     }
     else if(num<0){
-        error.textContent="please recheck your pincode of temporary address its too small";
+        error.textContent="Please check your pincode of temporary address, it is too small";
     }
 }
 function valp2(){
     const num=document.getElementById("pincode2").value;
     const error=document.getElementById("ep2");
     if(num>999999){
-        error.textContent="please recheck your pincode of temporary address its too large";
+        error.textContent="Please check your pincode of temporary address, it is too large";
     }
     else if(num<0){
-        error.textContent="please recheck your pincode of temporary address its too small";
+        error.textContent="Please check your pincode of temporary address, it is too small";
     }
 }
 function valexp(){
     const num=document.getElementById("exp").value;
     const error=document.getElementById("ee1");
     if(num>30){
-        error.textContent="its time to retire ";
+        error.textContent="It is time to retire ";
     }
     else if(num<0){
-        error.textContent=" please enter valid experience";
+        error.textContent=" Please enter valid experience";
     }
 }
 function valans(){
     const num=document.getElementById("va");
     const error=document.getElementById("ev");
     if(va!=17){
-        error.textContent=" please retry the captcha is wrong!!";
+        error.textContent=" Please retry, the captcha is wrong!!";
     }
 }
 function vala1(){
     const t=document.getElementById("tempa").value;
     const error=document.getElementById("eta");
     if(t.trim()===""){
-        error.textContent="enter address";
+        error.textContent="Please enter your address";
     }
 }
 function vala2(){
     const t=document.getElementById("pera").value;
     const error=document.getElementById("epera");
     if(t.trim()===""){
-        error.textContent="enter address";
+        error.textContent="Please enter your address";
     }
 }
 function valpr(){
     const t=document.getElementById("proof").value;
     const error=document.getElementById("epr");
     if(t.trim()=="-"){
-        error.textContent="please select proof of identity";
+        error.textContent="Please select your proof of identity";
     }
 }
 
